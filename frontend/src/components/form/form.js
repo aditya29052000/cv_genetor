@@ -319,12 +319,12 @@ const FormComponent = ({ history }) => {
       });
   };
   return (
-    <Container className="mt-5 mb-2">
-      <Form className="form-section">
+    <Container className="mt-5 mb-2"style={{border:'3px dotted black'}}>
+      <Form className="form-section" >
         <h1 className="text-dark font-weight-bold py-3">General Detail</h1>
         <Form.Row>
           <FormGroup as={Col} sm={12} md={4}>
-            <FormLabel>First Name</FormLabel>
+            <FormLabel className="text-dark font-weight-bold py-2">First Name</FormLabel>
             <FormControl
               type="text"
               placeholder="First Name"
@@ -334,7 +334,7 @@ const FormComponent = ({ history }) => {
             />
           </FormGroup>
           <FormGroup as={Col} sm={12} md={4}>
-            <FormLabel>Last Name</FormLabel>
+            <FormLabel className="text-dark font-weight-bold py-2">Last Name</FormLabel>
             <FormControl
               type="text"
               placeholder="Last Name"
@@ -344,7 +344,7 @@ const FormComponent = ({ history }) => {
             />
           </FormGroup>
           <FormGroup as={Col} sm={12} md={4}>
-            <FormLabel>Gender</FormLabel>
+            <FormLabel className="text-dark font-weight-bold py-2">Gender</FormLabel>
             <FormControl
               as="select"
               onChange={handleUserGender}
@@ -359,7 +359,7 @@ const FormComponent = ({ history }) => {
         </Form.Row>
         <Form.Row>
           <FormGroup as={Col} sm={12} md={4}>
-            <FormLabel>Age</FormLabel>
+            <FormLabel className="text-dark font-weight-bold py-2">Age</FormLabel>
             <FormControl
               type="number"
               min="1"
@@ -369,7 +369,7 @@ const FormComponent = ({ history }) => {
             />
           </FormGroup>
           <FormGroup as={Col} sm={12} md={4}>
-            <FormLabel>Profession</FormLabel>
+            <FormLabel className="text-dark font-weight-bold py-2">Profession</FormLabel>
             <FormControl
               type="text"
               placeholder="e.g Full stack developer"
@@ -379,10 +379,10 @@ const FormComponent = ({ history }) => {
             />
           </FormGroup>
           <FormGroup as={Col} sm={12} md={4}>
-            <FormLabel>Location</FormLabel>
+            <FormLabel className="text-dark font-weight-bold py-2">Location</FormLabel>
             <FormControl
               type="text"
-              placeholder="Lahore, Pakistan"
+              placeholder="Delhi, India"
               onChange={handleUserLocation}
               value={userLocation}
               required
@@ -391,7 +391,7 @@ const FormComponent = ({ history }) => {
         </Form.Row>
         <Form.Row>
           <FormGroup as={Col} sm={12} md={4}>
-            <FormLabel> Mobile Phone </FormLabel>
+            <FormLabel className="text-dark font-weight-bold py-2"> Mobile Phone </FormLabel>
             <FormControl
               type="number"
               placeholder="+01 23 456 789"
@@ -401,7 +401,7 @@ const FormComponent = ({ history }) => {
             />
           </FormGroup>
           <FormGroup as={Col} sm={12} md={4}>
-            <FormLabel> Email </FormLabel>
+            <FormLabel className="text-dark font-weight-bold py-2"> Email </FormLabel>
             <FormControl
               type="email"
               placeholder="info@domain.com"
@@ -411,7 +411,7 @@ const FormComponent = ({ history }) => {
             />
           </FormGroup>
           <FormGroup as={Col} sm={12} md={4}>
-            <FormLabel> House Address </FormLabel>
+            <FormLabel className="text-dark font-weight-bold py-2">  Address </FormLabel>
             <FormControl
               type="text"
               placeholder="House#0 St#0 street and city name"
@@ -423,7 +423,7 @@ const FormComponent = ({ history }) => {
         </Form.Row>
         <Form.Row>
           <FormGroup as={Col} sm={12}>
-            <Form.Label>Describe Yourself</Form.Label>
+            <Form.Label className="text-dark font-weight-bold py-2">Describe Yourself</Form.Label>
             <Form.Control
               as="textarea"
               rows={6}
@@ -436,7 +436,7 @@ const FormComponent = ({ history }) => {
         <h1 className="text-dark font-weight-bold py-4">Social Detail</h1>
         <Form.Row>
           <FormGroup as={Col} sm={12} md={4}>
-            <FormLabel>Social Website</FormLabel>
+            <FormLabel className="text-dark font-weight-bold py-2">Social Website</FormLabel>
             <FormControl
               as="select"
               onChange={handleFirstUserProfileWebsite}
@@ -449,7 +449,7 @@ const FormComponent = ({ history }) => {
             </FormControl>
           </FormGroup>
           <FormGroup as={Col} sm={12} md={4}>
-            <FormLabel>Username</FormLabel>
+            <FormLabel className="text-dark font-weight-bold py-2">Username</FormLabel>
             <FormControl
               type="text"
               placeholder="e.g johnDoe123"
@@ -461,7 +461,7 @@ const FormComponent = ({ history }) => {
         </Form.Row>
         <Form.Row>
           <FormGroup as={Col} sm={12} md={4}>
-            <FormLabel>Social Website</FormLabel>
+            <FormLabel className="text-dark font-weight-bold py-2">Social Website</FormLabel>
             <FormControl
               as="select"
               onChange={handleSecondUserProfileWebsite}
@@ -474,7 +474,7 @@ const FormComponent = ({ history }) => {
             </FormControl>
           </FormGroup>
           <FormGroup as={Col} sm={12} md={4}>
-            <FormLabel>Username</FormLabel>
+            <FormLabel className="text-dark font-weight-bold py-2">Username</FormLabel>
             <FormControl
               type="text"
               placeholder="e.g johnDoe123"
@@ -486,7 +486,7 @@ const FormComponent = ({ history }) => {
         </Form.Row>
         <Form.Row>
           <FormGroup as={Col} sm={12} md={4}>
-            <FormLabel>Social Website</FormLabel>
+            <FormLabel className="text-dark font-weight-bold py-2">Social Website</FormLabel>
             <FormControl
               as="select"
               onChange={handleThirdUserProfileWebsite}
@@ -499,7 +499,7 @@ const FormComponent = ({ history }) => {
             </FormControl>
           </FormGroup>
           <FormGroup as={Col} sm={12} md={4}>
-            <FormLabel>Username</FormLabel>
+            <FormLabel className="text-dark font-weight-bold py-2">Username</FormLabel>
             <FormControl
               type="text"
               placeholder="johnDoe.com"
@@ -514,20 +514,20 @@ const FormComponent = ({ history }) => {
         </h1>
         <Form.Row>
           <FormGroup as={Col} sm={12} md={6}>
-            <FormLabel> High school degree </FormLabel>
+            <FormLabel className="text-dark font-weight-bold py-2"> High school degree </FormLabel>
             <FormControl
               type="text"
-              placeholder="e.g metric with computer sciences"
+              placeholder="e.g pcm pcb"
               onChange={handleUserHighSchoolDegreeName}
               value={userHighSchoolDegreeName}
               required
             />
           </FormGroup>
           <FormGroup as={Col} sm={12} md={6}>
-            <FormLabel> School Name </FormLabel>
+            <FormLabel className="text-dark font-weight-bold py-2"> School Name </FormLabel>
             <FormControl
               type="text"
-              placeholder="e.g govt school"
+              placeholder="e.g cbse icse"
               onChange={handleUserHighSchoolName}
               value={userHighSchoolName}
               required
@@ -536,7 +536,7 @@ const FormComponent = ({ history }) => {
         </Form.Row>
         <Form.Row>
           <FormGroup as={Col} sm={12} md={4}>
-            <FormLabel>Starting Date</FormLabel>
+            <FormLabel className="text-dark font-weight-bold py-2">Starting Date</FormLabel>
             <FormControl
               type="date"
               onChange={handleUserHighSchoolDegreeStartingDate}
@@ -545,7 +545,7 @@ const FormComponent = ({ history }) => {
             />
           </FormGroup>
           <FormGroup as={Col} sm={12} md={4}>
-            <FormLabel>Ending Date</FormLabel>
+            <FormLabel className="text-dark font-weight-bold py-2">Ending Date</FormLabel>
             <FormControl
               type="date"
               onChange={handleUserHighSchoolDegreeEndingDate}
@@ -554,7 +554,7 @@ const FormComponent = ({ history }) => {
             />
           </FormGroup>
           <FormGroup as={Col} sm={12}>
-            <FormLabel>Describe your experience</FormLabel>
+            <FormLabel className="text-dark font-weight-bold py-2">Describe your experience</FormLabel>
             <Form.Control
               as="textarea"
               rows={6}
@@ -566,7 +566,7 @@ const FormComponent = ({ history }) => {
         </Form.Row>
         <Form.Row>
           <FormGroup as={Col} sm={12} md={6}>
-            <FormLabel> College degree </FormLabel>
+            <FormLabel className="text-dark font-weight-bold py-2"> College degree </FormLabel>
             <FormControl
               type="text"
               placeholder="e.g Intermediate in computer science"
@@ -576,7 +576,7 @@ const FormComponent = ({ history }) => {
             />
           </FormGroup>
           <FormGroup as={Col} sm={12} md={6}>
-            <FormLabel> College Name </FormLabel>
+            <FormLabel className="text-dark font-weight-bold py-2"> College Name </FormLabel>
             <FormControl
               type="text"
               placeholder="e.g MAO College"
@@ -588,7 +588,7 @@ const FormComponent = ({ history }) => {
         </Form.Row>
         <Form.Row>
           <FormGroup as={Col} sm={12} md={4}>
-            <FormLabel>Starting Date</FormLabel>
+            <FormLabel className="text-dark font-weight-bold py-2">Starting Date</FormLabel>
             <FormControl
               type="date"
               onChange={handleUserCollegeStartingDate}
@@ -597,7 +597,7 @@ const FormComponent = ({ history }) => {
             />
           </FormGroup>
           <FormGroup as={Col} sm={12} md={4}>
-            <FormLabel>Ending Date</FormLabel>
+            <FormLabel className="text-dark font-weight-bold py-2">Ending Date</FormLabel>
             <FormControl
               type="date"
               onChange={handleUserCollegeDegreeEndingDate}
@@ -606,7 +606,7 @@ const FormComponent = ({ history }) => {
             />
           </FormGroup>
           <FormGroup as={Col} sm={12}>
-            <FormLabel>Describe your experience</FormLabel>
+            <FormLabel className="text-dark font-weight-bold py-2">Describe your experience</FormLabel>
             <Form.Control
               as="textarea"
               rows={6}
@@ -618,7 +618,7 @@ const FormComponent = ({ history }) => {
         </Form.Row>
         <Form.Row>
           <FormGroup as={Col} sm={12} md={6}>
-            <FormLabel> University degree </FormLabel>
+            <FormLabel className="text-dark font-weight-bold py-2"> University degree </FormLabel>
             <FormControl
               type="text"
               placeholder="e.g bachelor in computer science"
@@ -628,7 +628,7 @@ const FormComponent = ({ history }) => {
             />
           </FormGroup>
           <FormGroup as={Col} sm={12} md={6}>
-            <FormLabel> University Name </FormLabel>
+            <FormLabel className="text-dark font-weight-bold py-2"> University Name </FormLabel>
             <FormControl
               type="text"
               placeholder="e.g university of the punjab"
@@ -640,7 +640,7 @@ const FormComponent = ({ history }) => {
         </Form.Row>
         <Form.Row>
           <FormGroup as={Col} sm={12} md={4}>
-            <FormLabel>Starting Date</FormLabel>
+            <FormLabel className="text-dark font-weight-bold py-2">Starting Date</FormLabel>
             <FormControl
               type="date"
               onChange={handleUserBachelorStartingDate}
@@ -649,7 +649,7 @@ const FormComponent = ({ history }) => {
             />
           </FormGroup>
           <FormGroup as={Col} sm={12} md={4}>
-            <FormLabel>Ending Date</FormLabel>
+            <FormLabel className="text-dark font-weight-bold py-2">Ending Date</FormLabel>
             <FormControl
               type="date"
               onChange={handleUserBachelorDegreeEndingDate}
@@ -658,7 +658,7 @@ const FormComponent = ({ history }) => {
             />
           </FormGroup>
           <FormGroup as={Col} sm={12}>
-            <FormLabel>Describe your experience</FormLabel>
+            <FormLabel className="text-dark font-weight-bold py-2">Describe your experience</FormLabel>
             <Form.Control
               as="textarea"
               rows={6}
@@ -674,7 +674,7 @@ const FormComponent = ({ history }) => {
         </h1>
         <Form.Row>
           <FormGroup as={Col} sm={12} md={6}>
-            <FormLabel> 1st Experience </FormLabel>
+            <FormLabel className="text-dark font-weight-bold py-2"> 1st Experience </FormLabel>
             <FormControl
               type="text"
               placeholder="e.g junior web developer"
@@ -684,7 +684,7 @@ const FormComponent = ({ history }) => {
             />
           </FormGroup>
           <FormGroup as={Col} sm={12} md={6}>
-            <FormLabel> Company Name </FormLabel>
+            <FormLabel className="text-dark font-weight-bold py-2"> Company Name </FormLabel>
             <FormControl
               type="text"
               placeholder="company name"
@@ -696,7 +696,7 @@ const FormComponent = ({ history }) => {
         </Form.Row>
         <Form.Row>
           <FormGroup as={Col} sm={12} md={4}>
-            <FormLabel>Starting Date</FormLabel>
+            <FormLabel className="text-dark font-weight-bold py-2">Starting Date</FormLabel>
             <FormControl
               type="date"
               onChange={handleUser1stExperienceStartingDate}
@@ -705,7 +705,7 @@ const FormComponent = ({ history }) => {
             />
           </FormGroup>
           <FormGroup as={Col} sm={12} md={4}>
-            <FormLabel>Ending Date</FormLabel>
+            <FormLabel className="text-dark font-weight-bold py-2">Ending Date</FormLabel>
             <FormControl
               type="date"
               onChange={handleUser1stExperienceEndingDate}
@@ -714,7 +714,7 @@ const FormComponent = ({ history }) => {
             />
           </FormGroup>
           <FormGroup as={Col} sm={12}>
-            <FormLabel>Describe your experience</FormLabel>
+            <FormLabel className="text-dark font-weight-bold py-2">Describe your experience</FormLabel>
             <Form.Control
               as="textarea"
               rows={6}
@@ -726,7 +726,7 @@ const FormComponent = ({ history }) => {
         </Form.Row>
         <Form.Row>
           <FormGroup as={Col} sm={12} md={6}>
-            <FormLabel> 2nd Experience </FormLabel>
+            <FormLabel className="text-dark font-weight-bold py-2"> 2nd Experience </FormLabel>
             <FormControl
               type="text"
               placeholder="e.g junior web developer"
@@ -736,7 +736,7 @@ const FormComponent = ({ history }) => {
             />
           </FormGroup>
           <FormGroup as={Col} sm={12} md={6}>
-            <FormLabel> Company Name </FormLabel>
+            <FormLabel className="text-dark font-weight-bold py-2"> Company Name </FormLabel>
             <FormControl
               type="text"
               placeholder="company name"
@@ -748,7 +748,7 @@ const FormComponent = ({ history }) => {
         </Form.Row>
         <Form.Row>
           <FormGroup as={Col} sm={12} md={4}>
-            <FormLabel>Starting Date</FormLabel>
+            <FormLabel className="text-dark font-weight-bold py-2">Starting Date</FormLabel>
             <FormControl
               type="date"
               onChange={handleUser2ndExperienceStartingDate}
@@ -757,7 +757,7 @@ const FormComponent = ({ history }) => {
             />
           </FormGroup>
           <FormGroup as={Col} sm={12} md={4}>
-            <FormLabel>Ending Date</FormLabel>
+            <FormLabel className="text-dark font-weight-bold py-2">Ending Date</FormLabel>
             <FormControl
               type="date"
               onChange={handleUser2ndExperienceEndingDate}
@@ -766,7 +766,7 @@ const FormComponent = ({ history }) => {
             />
           </FormGroup>
           <FormGroup as={Col} sm={12}>
-            <FormLabel>Describe your experience</FormLabel>
+            <FormLabel className="text-dark font-weight-bold py-2">Describe your experience</FormLabel>
             <Form.Control
               as="textarea"
               rows={6}
@@ -778,7 +778,7 @@ const FormComponent = ({ history }) => {
         </Form.Row>
         <Form.Row>
           <FormGroup as={Col} sm={12} md={6}>
-            <FormLabel> 3rd Experience </FormLabel>
+            <FormLabel className="text-dark font-weight-bold py-2"> 3rd Experience </FormLabel>
             <FormControl
               type="text"
               placeholder="e.g junior web developer"
@@ -788,7 +788,7 @@ const FormComponent = ({ history }) => {
             />
           </FormGroup>
           <FormGroup as={Col} sm={12} md={6}>
-            <FormLabel> Company Name </FormLabel>
+            <FormLabel className="text-dark font-weight-bold py-2"> Company Name </FormLabel>
             <FormControl
               type="text"
               placeholder="company name"
@@ -800,7 +800,7 @@ const FormComponent = ({ history }) => {
         </Form.Row>
         <Form.Row>
           <FormGroup as={Col} sm={12} md={4}>
-            <FormLabel>Starting Date</FormLabel>
+            <FormLabel className="text-dark font-weight-bold py-2">Starting Date</FormLabel>
             <FormControl
               type="date"
               onChange={handleUser3rdExperienceStartingDate}
@@ -809,7 +809,7 @@ const FormComponent = ({ history }) => {
             />
           </FormGroup>
           <FormGroup as={Col} sm={12} md={4}>
-            <FormLabel>Ending Date</FormLabel>
+            <FormLabel className="text-dark font-weight-bold py-2">Ending Date</FormLabel>
             <FormControl
               type="date"
               onChange={handleUser3rdExperienceEndingDate}
@@ -818,7 +818,7 @@ const FormComponent = ({ history }) => {
             />
           </FormGroup>
           <FormGroup as={Col} sm={12}>
-            <FormLabel>Describe your experience</FormLabel>
+            <FormLabel className="text-dark font-weight-bold py-2">Describe your experience</FormLabel>
             <Form.Control
               as="textarea"
               rows={6}
@@ -830,7 +830,7 @@ const FormComponent = ({ history }) => {
         </Form.Row>
         <Form.Row>
           <FormGroup as={Col} sm={12}>
-            <Form.Label>Write Your Skills</Form.Label>
+            <Form.Label className="text-dark font-weight-bold py-2">Write Your Skills</Form.Label>
             <Form.Control
               as="textarea"
               rows={6}
